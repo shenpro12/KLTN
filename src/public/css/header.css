@@ -1,0 +1,99 @@
+li {
+    list-style: none;
+}
+
+.header-container {
+    height: 90px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 11;
+    transition: 0.4s ease;
+}
+
+.header {
+    display: flex;
+    color: white;
+}
+
+.header-item {
+    box-sizing: content-box;
+    margin: 25px 10px;
+    font-size: 15px;
+}
+
+.header-item:hover {
+    cursor: pointer;
+    color: #ff9c00;
+    border-bottom: 3px solid #ff9c00;
+}
+
+.seach {
+    font-size: 30px;
+    color: white;
+    margin: 20px 105px;
+    line-height: 70px;
+    display: flex;
+}
+
+.seach:hover,
+.menu:hover,
+.ti-menu:hover {
+    cursor: pointer;
+    color: #ff9c00;
+}
+
+.ti-search:hover {
+    border-bottom: 3px solid #ff9c00;
+    color: #ff9c00;
+}
+
+.menu {
+    font-size: 40px;
+    color: white;
+    display: none;
+    position: absolute;
+    left: 10px;
+    margin-top: 10px;
+}
+
+.menu:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .menu {
+        display: block;
+    }
+    .header,
+    .seach,
+    .login {
+        display: none;
+    }
+}
+
+.login {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.login-text:hover {
+    cursor: pointer;
+    color: #ff9c00 !important;
+}
+
+.dropdown {
+    animation: drop 0.8s ease;
+}
+
+@keyframes drop {
+    0% {
+        margin-top: -90px;
+    }
+    100% {
+        margin-top: 0px;
+    }
+}
