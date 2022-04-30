@@ -292,7 +292,7 @@ p {
 
 .textshow1 {
     position: absolute;
-    margin-top: -170px;
+    margin-top: 350px;
     margin-left: 30px;
     z-index: 10;
     animation: 20s slides-set-1 -0.1s infinite;
@@ -301,7 +301,7 @@ p {
 
 .textshow2 {
     position: absolute;
-    margin-top: -170px;
+    margin-top: 350px;
     margin-left: 30px;
     z-index: 10;
     animation: 20s slides-set-2 -0.1s infinite;
@@ -310,7 +310,7 @@ p {
 
 .textshow3 {
     position: absolute;
-    margin-top: -170px;
+    margin-top: 350px;
     margin-left: 30px;
     z-index: 10;
     animation: 20s slides-set-3 -0.1s infinite;
@@ -331,7 +331,7 @@ p {
     .textshow1,
     .textshow2,
     .textshow3 {
-        margin-top: -100px;
+        margin-top: 150px;
     }
 }
 
@@ -345,6 +345,6 @@ p {
     .textshow1,
     .textshow2,
     .textshow3 {
-        margin-top: -150px;
+        margin-top: 200px;
     }
 }
