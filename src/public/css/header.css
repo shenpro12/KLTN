@@ -94,6 +94,11 @@ li>a:hover {
     position: absolute;
 }
 
+.logo-image {
+    width: 180px;
+    height: 110px;
+}
+
 @media (max-width:1000px) {
     .logo {
         position: relative;
@@ -126,5 +131,23 @@ li>a:hover {
 @media (max-width:850px) {
     .search {
         display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .wrapper {
+        height: 40vh;
+    }
+    .slide-text {
+        font-size: 15px;
+    }
+    .textshow1,
+    .textshow2,
+    .textshow3 {
+        margin-top: 150px;
+    }
+    .logo-image {
+        width: 140px;
+        height: 80px;
     }
 }
