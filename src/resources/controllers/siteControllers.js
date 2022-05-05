@@ -6,7 +6,7 @@ class siteControllers {
         homeBanner.find({})
             .then(items => {
                 res.render('home', {
-                    items: multipleMongooseToObject(items)
+                    items: multipleMongooseToObject(items),
                 })
             })
             .catch(err => next(err))

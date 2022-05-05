@@ -7,4 +7,4 @@ const homeBanner = new Schema({
     description_down: String,
     id: String
 });
-module.exports = mongoose.model('homeBanner', homeBanner);
+module.exports = mongoose.model('homebanner', homeBanner);
