@@ -1,5 +1,6 @@
 const homeBanner = require('../models/homeBanner')
 const destination = require('../models/destination')
+const specialty_dish = require('../models/special_dish')
 const { multipleMongooseToObject } = require('../ulti/mongoose');
 class siteControllers {
     //GET /home
@@ -14,10 +15,18 @@ class siteControllers {
                         return destinations = multipleMongooseToObject(destinations)
                     })
                     .then(destinations => {
-                        res.render('home', {
-                            banner,
-                            destinations
-                        })
+                        specialty_dish.find({})
+                            .then(dishs => {
+                                return dishs = multipleMongooseToObject(dishs)
+                            })
+                            .then(dishs => {
+                                res.render('home', {
+                                    banner,
+                                    destinations,
+                                    dishs
+                                })
+                            })
+                            .catch(err => next(err))
                     })
                     .catch(err => next(err))
             })

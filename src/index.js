@@ -22,6 +22,6 @@ db.connect()
     //
 route(app);
 
-app.listen(process.env.PORT || 3000, () => {
+app.listen(process.env.PORT || 4000, () => {
     console.log(`Example app listening on port ${port}`);
 })

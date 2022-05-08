@@ -39,7 +39,7 @@
 </div>
 
     
-        <div class="splide" aria-label="Splide Basic HTML Example" id="splide">
+        <div class="splide" id="splide1">
             <div class="splide__track">
                 <ul class="splide__list">
                   {{#each destinations}}
@@ -55,4 +55,47 @@
                 </ul>
             </div>
         </div>
+
+<div class="tour_container" style="background-image: url(/img/tour-bg.jpg);">
+<div style="margin-top: 5%; position:absolute; width:100%">
+<div class="splide" id="splide2">
+            <div class="splide__track">
+                <ul class="splide__list">
+                  {{#each destinations}}
+                    <li class="splide__slide">
+                        <div class="splide-item">
+                          <img src="http://drive.google.com/uc?export=view&id={{this.thumb_url}}" class="item_img" />
+                          <div class="tour-text">
+                            <div class="tour-content">
+                              <h1>dsadsad</h1>
+                              <h1>dsadsad1</h1>
+                            </div>
+                          </div>
+                        </div>
+                    </li>
+                  {{/each}}
+                </ul>
+            </div>
+        </div>
+</div>
+</div>
+
+<div class="text-center">
+  <h1 class="thin-font">Thưởng thức đặc sản Đà Lạt</h1>
+  <p>CẢM NHẬN TINH HOA ẨM THỰC</p>
+</div>
+
+<div class="dishs_container grid wide">
+  <div class="row dish_center">
+    {{#each dishs}}
+    <div class="col l-3 m-4 c-6 dish_item">
+      <div class="itemm">
+        <img src="http://drive.google.com/uc?export=view&id={{this.thumb_url}}" alt="" class="dish_img" />
+        <div class="shadow"><p>{{this.name}}</p></div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</div>
+        
 <script src="/js/home.js"></script>
