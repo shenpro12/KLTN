@@ -1,6 +1,6 @@
 <div class="wrapper">
   <div class="slide-text">
-{{#each items}}
+{{#each banner}}
 <div class="textshow{{this.id}}">
   <h2 class="thin-font">{{this.description_up}}</h2>
   <h1>{{this.description_down}}</h1>
@@ -11,21 +11,21 @@
 <div class="slideshows">
   <div class="slideshow slideshow--hero">
     <div class="slides">
-      {{#each items}}
+      {{#each banner}}
       <div class="slide slide{{this.id}}" style="background-image: url(http://drive.google.com/uc?export=view&id={{this.thumb_url}});"></div>
       {{/each}}
     </div>
   </div>
   <div class="slideshow slideshow--contrast slideshow--contrast--before">
     <div class="slides">
-      {{#each items}}
+      {{#each banner}}
       <div class="slide slide{{this.id}}" style="background-image: linear-gradient(to bottom, rgba(200, 200, 75, 0.25) 0, rgba(200, 75, 75, 0.5) 100%), url(http://drive.google.com/uc?export=view&id={{this.thumb_url}})"></div>
       {{/each}}
     </div>
   </div>
   <div class="slideshow slideshow--contrast slideshow--contrast--after">
     <div class="slides">
-      {{#each items}}
+      {{#each banner}}
       <div class="slide slide{{this.id}}" style="background-image: linear-gradient(to bottom, rgba(200, 200, 75, 0.25) 0, rgba(200, 75, 75, 0.5) 100%), url(http://drive.google.com/uc?export=view&id={{this.thumb_url}})"></div>
       {{/each}}
     </div>
@@ -42,40 +42,17 @@
         <div class="splide" aria-label="Splide Basic HTML Example" id="splide">
             <div class="splide__track">
                 <ul class="splide__list">
+                  {{#each destinations}}
                     <li class="splide__slide">
                         <div class="splide-item">
-                          <img src="/img/bana2.jpg" class="item_img" />
+                          <img src="http://drive.google.com/uc?export=view&id={{this.thumb_url}}" class="item_img" />
                           <div class="text">
-                            <p class="text-text">NUI BAHILL</p>
+                            <p class="text-text">{{this.name}}</p>
                           </div>
                         </div>
                     </li>
-                    <li class="splide__slide">
-                        <div class="splide-item">
-                          <img src="/img/bana2.jpg" class="item_img" />
-                          <div class="text">
-                            <p class="text-text">NUI BAHILL</p>
-                          </div>
-                        </div>
-                    </li>
-                    <li class="splide__slide">
-                        <div class="splide-item">
-                          <img src="/img/bana2.jpg" class="item_img" />
-                          <div class="text">
-                            <p class="text-text">NUI BAHILL</p>
-                          </div>
-                        </div>
-                    </li>
-                    <li class="splide__slide">
-                        <div class="splide-item">
-                          <img src="/img/bana2.jpg" class="item_img" />
-                          <div class="text">
-                            <p class="text-text">NUI BAHILL</p>
-                          </div>
-                        </div>
-                    </li>
+                  {{/each}}
                 </ul>
             </div>
         </div>
-
-
+<script src="/js/home.js"></script>
